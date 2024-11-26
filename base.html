@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nt Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+<div>
+    <label for="precondInput">Enter preconditions:</label>
+    <input type="text" id="precondInput">
+    <button onclick="submitPrecond()">Submit</button>
+</div>
+
+
+<!-- x = y => x + j = y + j -->
+<div>
+  <label for="antecedentInput">Enter antecedent:</label>
+  <input type="text" id="antecedentInput">
+</div>
+
+<div>
+    <label for="consequentInput">Enter consequent:</label>
+    <input type="text" id="consequentInput">
+  </div>
+
+  <!-- Addition -->
+  <div>
+    <label for="theoremIdInput">Select theorem:</label>
+    <select id="theoremIdInput">
+    </select>
+    <button onclick="submitEntry()">Submit</button>
+</div>
+
+
+<!-- define variable eg: y = - x -->
+<div>
+    <label for="variableInput">Define variable:</label>
+    <input type="text" id="variableInput">
+    <button onclick="submitVariable()">Submit</button>
+</div>
+
+<!-- deal with parentheses -->
+
+<div>
+    <label for="addParenthesisL">add parenthesis left:</label>
+    <input type="text" id="addParenthesisL">
+    <button onclick="addParenthesisL()">enter ID</button>
+    <label for="addParenthesisR">add parenthesis right:</label>
+    <input type="text" id="addParenthesisR">
+    <button onclick="addParenthesisR()">enter ID</button>
+</div>
+
+<div>
+    <label for="takeParenthesisL">take parenthesis left:</label>
+    <input type="text" id="takeParenthesisL">
+    <button onclick="takeParenthesisL()">enter ID</button>
+    <label for="takeParenthesisR">take parenthesis right:</label>
+    <input type="text" id="takeParenthesisR">
+    <button onclick="takeParenthesisR()">enter
+</div>
+
+<!-- Substitution -->
+
+<div>
+    <label for="substituteID">ID to substitute:</label>
+    <input type="text" id="substituteID">
+    <label for="substituteEQ">equation ID:</label>
+    <input type="text" id="substituteEQ">
+    <button onclick="substitute()">Substitute</button>
+</div>
+<!-- find a way to add preconditions-->
+<!-- add to workspace if it matches the structure of antecent and consequent for specific id-->
+<!-- make a button that allows you to add most recent statement to theorem list-->
+<!-- this will add all the preconditions, implying the most recent statement-->
+<!-- make something to verify structure of theorems-->
+
+<!-- In the workspace, able to add antecedents and select past items to be antecedents -->
+
+
+<div id="preconds"></div>
+<script src="script.js"></script>
+</div>
+
+<div id="currentWork"></div>
+<script src="script.js"></script>
+</div>
+<div>
+    <label for="create theorem">Enter new theorem name:</label>
+    <input type="text" id="create theorem">
+    <button onclick="submitTheorem()">Submit</button>
+  </div>
+<div>
+    <button onclick="clearStatements()">Restart</button>
+</div>
+<!-- <div>
+    <button onclick="substitute()">subs</button>
+</div> -->
+</div>
+  <div id="theoremList"></div>
+  <script src="script.js"></script>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>

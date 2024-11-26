@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px; /* Adds margin around the body */
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px; /* Slightly reduce the max width to account for margins */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 25%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table Styles */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table th {
+    width: 50%; /* Equal width for table header columns */
+  }
+  
+  table td {
+    width: 50%; /* Equal width for table data columns */
+  }
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Message Styles */
+.message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.error {
+  background-color: #dc3545;
+  color: #fff;
+}
